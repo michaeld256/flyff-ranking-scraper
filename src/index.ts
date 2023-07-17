@@ -10,4 +10,7 @@ import { RankingScraperBrowser } from "./RankingScraper/RankingScraperBrowser";
 	// Do whatever you like with the ranking ...
 	// e.g. scrape ranking every hour to compare with previous iteratations.
 	console.log(ranking)
+
+	// Make sure to destroy the puppeteer session, else the process won't exit
+	await rankingScraper.destroy()
 }()) 

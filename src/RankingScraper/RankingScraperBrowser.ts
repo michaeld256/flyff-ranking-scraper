@@ -34,6 +34,16 @@ class RankingScraperBrowser implements RankingScraper {
 		})
 	}
 
+	public async destroy(): Promise<void> {
+		return new Promise(async (resolve, reject) => {
+			if(!this.isSetUp)
+				return reject("Puppeteer is not setup, can't destroy it.")
+			
+			await this.tab!.close()
+			await this.browser!.close()
+		})
+	}
+
 	/** Scrapes multiple flyff universe servers.
 	 * 
 	 * @param servers Servers to scrape as an associative array (serverName => serverId)
