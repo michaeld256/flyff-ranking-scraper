@@ -6,5 +6,5 @@ A simple web scraper for the [Official Flyff Universe Ranking](https://universe.
 
 
 ## Usage
-Simply clone the project and install the dependencies (`npm install`). Once you did so, specify the servers to scrape in [index.ts](/src/index.ts:L8).  
+Simply clone the project and install the dependencies (`npm install`). Once you did so, specify the servers to scrape in [index.ts](/src/index.ts#L8C65-L8C65).  
 Build the project and run it using `npm run run-ts` or `npx tsc && node ./build/index.js`
