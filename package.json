@@ -2,6 +2,9 @@
 	"devDependencies": {
 		"typescript": "^5.1.6"
 	},
+	"dependencies": {
+		"puppeteer": "^20.8.2"
+	},
 	"scripts": {
 		"run-ts": "rm -rf build && npx tsc && node ./build/index.js"
 	}
