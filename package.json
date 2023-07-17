@@ -1,0 +1,8 @@
+{
+	"devDependencies": {
+		"typescript": "^5.1.6"
+	},
+	"scripts": {
+		"run-ts": "rm -rf build && npx tsc && node ./build/index.js"
+	}
+}
